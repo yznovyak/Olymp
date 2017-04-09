@@ -1,0 +1,2 @@
+#!/bin/bash
+rm -f a.out && g++-6 -std=c++11 -O2 -fopenmp $1 && time ./a.out
