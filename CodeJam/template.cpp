@@ -7,7 +7,7 @@ using namespace std;
 
 typedef long long int64;
 
-#define DPRINT(x) cout << #x << " = " << x << endl;
+#define DPRINT(x) cerr << __LINE__ << ": " << #x << " = " << x << endl;
 
 template <class T1, class T2>
 ostream& operator <<(ostream& os, const pair<T1, T2>& v);
