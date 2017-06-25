@@ -11,7 +11,7 @@ struct PairHash {
   std::hash<T1> h1;
   std::hash<T2> h2;
 
-  inline size_t operator()(const pair<T1, T2>& p) {
+  inline size_t operator()(const pair<T1, T2>& p) const {
     size_t seed = 0;
     hash_combine(seed, h1(p.first));
     hash_combine(seed, h2(p.second));
@@ -20,7 +20,7 @@ struct PairHash {
 };
 
 struct PiiHash {
-  inline size_t operator()(const pair<int, int>& p) {
+  inline size_t operator()(const pair<int, int>& p) const {
     size_t seed = p.first;
     hash_combine(seed, p.second);
     return seed;
