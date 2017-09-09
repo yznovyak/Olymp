@@ -9,6 +9,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -47,6 +48,7 @@ int main() {
   freopen("input.txt", "rt", stdin);
 #endif
   cin.tie(0);
+  cout.tie(0);
   ios_base::sync_with_stdio(0);
 
   vector<int> vec = {1,2,3, 1,2,10};
