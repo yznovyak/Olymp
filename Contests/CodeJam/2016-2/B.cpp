@@ -45,6 +45,7 @@ struct Test {
     vector<double> f(K+1, 0.0), next(K+1);
     f[0] = 1-p[0];
     f[1] = p[0];
+
     for (int i = 1; i < K; i++) {
       double p0 = p[i];
       next[0] = f[0] * (1-p0);
@@ -67,6 +68,7 @@ struct Test {
         p_sub.push_back(prob[N-1-i]);
       vector<double> com_prob = calc_probs(p_sub);
       double seek = com_prob[K/2];
+      // cout << "t=" << t << "  seek=" << seek << "  " << p_sub << endl;
       if (seek > ans)
         ans = seek;
     }
@@ -79,8 +81,9 @@ struct Test {
 
 
 int main() {
+  //freopen("input.txt", "rt", stdin);
   freopen("B-large-practice.in", "rt", stdin);
-  freopen("B-large-practice.out", "wt", stdout);
+  //freopen("B-large-practice.out", "wt", stdout);
 
   int T;
   scanf("%d", &T);

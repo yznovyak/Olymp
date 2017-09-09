@@ -54,35 +54,6 @@ struct Test {
         ans = correct[{ch, N}];
         break;
       }
-
-    // string stupid = string(P, 'P') + string(R, 'R') + string(S, 'S');
-    // do {
-    //   string s = stupid;
-    //   bool bad = false;
-    //   while (s.size() > 1) {
-    //     string s2 = "";
-    //     for (size_t i = 0; i < s.size(); i += 2) {
-    //       if (s[i] == s[i+1]) {
-    //         bad = true;
-    //         break;
-    //       }
-    //       if (s[i] == 'P' && s[i+1] == 'R') s2 += 'P';
-    //       if (s[i] == 'P' && s[i+1] == 'S') s2 += 'S';
-    //       if (s[i] == 'R' && s[i+1] == 'P') s2 += 'P';
-    //       if (s[i] == 'R' && s[i+1] == 'S') s2 += 'R';
-    //       if (s[i] == 'S' && s[i+1] == 'P') s2 += 'S';
-    //       if (s[i] == 'S' && s[i+1] == 'R') s2 += 'R';
-    //     }
-    //     if (bad) break;
-    //     s = s2;
-    //   }
-    //   if (!bad) {
-    //     // if (ans != stupid)
-    //     //   cout << "Hmmm " << ans << " " << stupid << endl;
-    //     ans = stupid;
-    //     break;
-    //   }
-    // } while (next_permutation(stupid.begin(), stupid.end()));
   }
 
   void print(int num_test) {

@@ -78,9 +78,9 @@ struct Test {
 
 
 int main() {
-  // freopen("input.txt", "rt", stdin);
-  freopen("C-large.in", "rt", stdin);
-  freopen("C-large.out", "wt", stdout);
+  freopen("input.txt", "rt", stdin);
+  //freopen("C-large.in", "rt", stdin);
+  //freopen("C-large.out", "wt", stdout);
 
   int T;
   scanf("%d", &T);

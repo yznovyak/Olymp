@@ -47,8 +47,7 @@ int64 cnt;
 
 void gen(int pos, int score) {
   cnt++;
-  // if (score > max_score) {
-  if (score == 7) {
+  if (score > max_score) {
     max_score = score;
     printf("\nnew max = %d\n", max_score);
     print_grid();
@@ -81,18 +80,18 @@ void gen(int pos, int score) {
 }
 
 int main() {
-  N = 5;
+  N = 6;
   for (int r = 0; r < N; r++) {
     for (int c = 0; c < N; c++)
       grid[r][c] = '.';
     grid[r][N] = 0;
   }
 
-  grid[0][0] = '+';
-  grid[0][1] = '+';
-  grid[0][2] = '+';
-  grid[0][3] = '+';
-  grid[0][4] = 'o';
+  // grid[0][0] = '+';
+  // grid[0][1] = '+';
+  // grid[0][2] = '+';
+  // grid[0][3] = '+';
+  // grid[0][4] = 'o';
 
   cnt = 0;
   max_score = -1;
